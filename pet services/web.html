@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Know more</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Pet Care & Services </h1>
+      <p>Time to save them</p>
+    </section>
+
+    <!-- END WELCOME SECTION -->
+    <!--START SLIDE SHOW-->
+    <div class="slideshow-container">
+       
+        <div class="mySlides">
+            <img src="./kitty white (2).jpeg" alt="Image 2" class="img">
+        </div>
+    
+        <div class="mySlides">
+            <img src="./kitty white (3).jpeg" alt="Image 3" class="img">
+        </div>
+        <div class="mySlides">
+            <img src="./kitty white (4).jpeg" alt="Image 3" class="img">
+        </div>
+        <div class="mySlides">
+            <img src="./kitty white (5).jpeg" alt="Image 3" class="img">
+        </div>
+        <div class="mySlides">
+            <img src="./kitty white (7).jpeg" alt="Image 3" class="img">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <!--END SLIDE SHOW-->
+
+    <!-- START PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">Know more about how to save them</h2>
+
+      <div class="projects-grid">
+        <a
+          href=""
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./puppy-1187267_1920.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Dogs  
+            <span class="code">&gt;</span>
+          </p>
+        </a>
+        <a
+          href=""
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./cat-5836297_1920.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Cats
+            <span class="code">&gt;</span>
+          </p>
+        </a>
+        <a
+          href=""
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./rabbit-5180820_1920.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Rabbit
+            <span class="code">&gt;</span>
+          </p>
+        </a>
+        <a
+          href=""
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./terrapin-411853_1920.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Turtle
+            <span class="code">&gt;</span>
+          </p>
+        </a>
+        <a
+          href=""
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./discus-fish-1943755_1920.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Fishes
+            <span class="code">&gt;</span>
+          </p>
+        </a>
+        <a
+          href=""
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="./cute-3161014_1920.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Hamster
+            <span class="code">&gt;</span>
+          </p>
+        </a>
+      </div>
+
+      <a
+        href=""
+        class="btn btn-show-all"
+        target="_blank"
+        >Show all<i class="fas fa-chevron-right"></i
+      ></a>
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together to make them happy.....</h2>
+      </div>
+      <div class="contact-links">
+        <a id="profile-link" href="" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <ahref="" target="_blank" class="btn contact-detail">
+        <i class="fab fa-twitter"></i> Twitter</a>
+        <a href="" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
+        <a href="" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call</a>
+        <a class="text-body-secondary text-decoration-none mx-2" href="https://www.instagram.com/__ayushranjan?igsh=MTFzd3BleDc0YjNnZg==">
+          <i class="bi bi-instagram"></i>
+      </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+
+   
+</body>
+</html>
